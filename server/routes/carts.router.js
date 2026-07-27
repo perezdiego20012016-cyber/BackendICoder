@@ -1,0 +1,11 @@
+import { Router } from "express";
+import { asyncHandler } from "../middleware/asyncHandler.js";
+import { addProduct, clearCart, createCart, getCart, removeProduct, replaceProducts, updateQuantity } from "../controllers/cart.controller.js";
+export const cartsRouter = Router();
+cartsRouter.post("/", asyncHandler(createCart));
+cartsRouter.get("/:cid", asyncHandler(getCart));
+cartsRouter.post("/:cid/products/:pid", asyncHandler(addProduct));
+cartsRouter.delete("/:cid/products/:pid", asyncHandler(removeProduct));
+cartsRouter.put("/:cid", asyncHandler(replaceProducts));
+cartsRouter.put("/:cid/products/:pid", asyncHandler(updateQuantity));
+cartsRouter.delete("/:cid", asyncHandler(clearCart));

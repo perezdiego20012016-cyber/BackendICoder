@@ -1,0 +1,6 @@
+<h1>Carrito {{cart._id}}</h1>
+<section class="cart-list">
+  {{#each products}}
+    <article class="cart-row"><div><h2>{{product.title}}</h2><p>${{product.price}} × {{quantity}}</p></div></article>
+  {{else}}<p>El carrito está vacío.</p>{{/each}}
+</section>

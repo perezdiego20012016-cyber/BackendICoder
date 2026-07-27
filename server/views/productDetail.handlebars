@@ -1,0 +1,10 @@
+<article class="detail">
+  {{#if product.thumbnails.[0]}}<img src="{{product.thumbnails.[0]}}" alt="{{product.title}}">{{/if}}
+  <div><p>{{product.category}}</p><h1>{{product.title}}</h1><p>{{product.description}}</p>
+  <strong>${{product.price}}</strong><p>Stock: {{product.stock}}</p>
+  <form class="add-cart" data-product-id="{{product._id}}">
+    <input name="cartId" placeholder="ID del carrito" required>
+    <button type="submit">Agregar al carrito</button>
+  </form><p class="message"></p></div>
+</article>
+<script src="/js/cart.js"></script>

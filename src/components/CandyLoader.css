@@ -1,0 +1,43 @@
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+.candy-loader {
+  display: flex;
+  gap: 15px;
+}
+
+.candy {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  animation: bounce 0.6s infinite alternate;
+}
+
+/* Colores tipo golosinas */
+.candy1 {
+  background: #380bdc;
+  animation-delay: 0s;
+}
+
+.candy2 {
+  background: #c31cd9;
+  animation-delay: 0.2s;
+}
+
+.candy3 {
+  background: #dd32af;
+  animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
