@@ -243,6 +243,15 @@ Socket.IO se carga en las vistas. Al recibir `products:changed`, el navegador ac
 
 ## Diapositiva 8 — Evidencia de ejecución real
 
+**Arranque del servidor con MongoDB:**
+
+```text
+> npm.cmd run server
+
+MongoDB conectado: ecommerce
+Servidor en http://localhost:8080
+```
+
 **Carga del catálogo en MongoDB:**
 
 ```text
